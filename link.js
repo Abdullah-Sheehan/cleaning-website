@@ -1,0 +1,1 @@
+export const wap = 'https://wap.example.com';
