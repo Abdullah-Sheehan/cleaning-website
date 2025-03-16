@@ -1,8 +1,8 @@
 import Image from "next/image";
-import we from "@/../public/images/we.jpg";
-import floor_cleaning from "@/../public/images/floor_cleaning.jpg";
-import support from "@/../public/images/support.jpg";
-import support2 from "@/../public/images/support2.jpg";
+import we from "../../public/images/we.jpg";
+import floor_cleaning from "../../public/images/floor_cleaning.jpg";
+import support from "../../public/images/support.jpg";
+import support2 from "../../public/images/support2.jpg";
 import Sevices from "./components/Services/Sevices";
 import Services from "./components/Services/Services";
 import "./globals.css";
