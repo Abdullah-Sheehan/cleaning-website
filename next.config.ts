@@ -9,7 +9,9 @@ const nextConfig = {
 
     // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
     // skipTrailingSlashRedirect: true,
-
+    images: {
+        unoptimized: true,
+    },
     distDir: "dist",
 };
 
