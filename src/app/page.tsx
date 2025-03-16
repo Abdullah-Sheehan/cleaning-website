@@ -1,33 +1,41 @@
 import Image from "next/image";
 import we from "@/../public/images/we.jpg";
 import floor_cleaning from "@/../public/images/floor_cleaning.jpg";
-import toilet_cleaning from "@/../public/images/toilet_cleaning.jpg";
 import support from "@/../public/images/support.jpg";
 import support2 from "@/../public/images/support2.jpg";
+import Sevices from "./components/Services/Sevices";
+import Services from "./components/Services/Services";
+import "./globals.css";
 export default function Home() {
     return (
         <div className="">
-            <div className="relative h-screen flex items-center justify-center">
+            <div className="relative h-screen flex items-center justify-start px-10">
                 <Image
-                    className="absolute inset-0 w-full h-full object-cover opacity-70"
+                    className="absolute inset-0 w-full h-full object-cover opacity-70 imageofbg"
                     src={we}
                     alt="bg-image"
+                    draggable="false"
                 />
-                <div className="relative z-10 text-white p-6 max-w-lg">
-                    <p className="text-sm">We are Clean Afford</p>
-                    <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-                        Best cleaning service in town!
+                <div className="relative z-10 text-white">
+                    <p className="text-3xl" style={{ textAlign: "left" }}>
+                        We are{" "}
+                        <span style={{ fontWeight: "bolder" }}>
+                            Clean Afford
+                        </span>
+                    </p>
+                    <h1 className="mt-4 text-5xl md:text-7xl font-bold leading-tight bestcleaning">
+                        Best cleaning <br /> service in town!
                     </h1>
-                    <p className="mt-4 text-sm md:text-base">
+                    <p className="mt-4 text-2xl">
                         As a app web crawler expert, I help organizations adjust
                         to the expanding significance.
                     </p>
                     <div className="mt-6 flex items-center space-x-4">
-                        <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full flex items-center">
-                            <i className="fas fa-play"></i>
+                        <button className="wapbtn text-xl px-5 py-5 bg-white transition hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full flex items-center hover:cursor-pointer">
+                            <i className="fab fa-whatsapp text-green-900"></i>
                         </button>
-                        <button className="bg-white text-gray-900 font-bold py-2 px-4 rounded-full flex items-center">
-                            OUR SERVICES
+                        <button className="me-auto text-xl px-10 py-3 transition hover:cursor-pointer bg-green-700 text-white font-bold rounded-full flex items-center">
+                            Book Our Services
                             <i className="fas fa-arrow-right ml-2"></i>
                         </button>
                     </div>
@@ -75,93 +83,35 @@ export default function Home() {
                             ABOUT US
                             <i className="fas fa-arrow-right ml-2"></i>
                         </button> */}
+                        <div className="mt-10 flex flex-wrap gap-5">
+                            <Sevices />
+                            <Sevices />
+                            <Sevices />
+                            <Sevices />
+                            <Sevices />
+                            <Sevices />
+                        </div>
                     </div>
                 </div>
             </div>
             <section className="text-center py-12">
-                <h2 className="text-blue-600 text-sm font-semibold mb-2">
+                <h2 className="text-blue-600 text-lg font-semibold mb-2">
                     Our featured services
                 </h2>
-                <h1 className="text-3xl font-bold text-blue-900 mb-8">
+                <h1 className="text-4xl font-bold text-blue-900 mb-8">
                     Why will you choose our services?
                 </h1>
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <Image
-                                src={toilet_cleaning}
-                                alt="service"
-                                className="w-full h-48 object-cover"
-                            />
-                            <div className="p-6">
-                                <div className="flex items-center mb-4">
-                                    <i className="fas fa-toilet text-blue-600 text-2xl mr-2"></i>
-                                    <h3 className="text-xl font-bold text-blue-900">
-                                        Toilet Cleaning
-                                    </h3>
-                                </div>
-                                <p className="text-gray-600 mb-4">
-                                    As a app web crawler expert a significance
-                                    of internet.
-                                </p>
-                                {/* <a
-                                    className="text-blue-600 font-semibold flex items-center"
-                                    href="#">
-                                    <i className="fas fa-arrow-circle-right mr-2"></i>
-                                    Read more
-                                </a> */}
-                            </div>
-                        </div>
-                        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <Image
-                                src={toilet_cleaning}
-                                alt="service"
-                                className="w-full h-48 object-cover"
-                            />
-                            <div className="p-6">
-                                <div className="flex items-center mb-4">
-                                    <i className="fas fa-toilet text-blue-600 text-2xl mr-2"></i>
-                                    <h3 className="text-xl font-bold text-blue-900">
-                                        Toilet Cleaning
-                                    </h3>
-                                </div>
-                                <p className="text-gray-600 mb-4">
-                                    As a app web crawler expert a significance
-                                    of internet.
-                                </p>
-                                {/* <a
-                                    className="text-blue-600 font-semibold flex items-center"
-                                    href="#">
-                                    <i className="fas fa-arrow-circle-right mr-2"></i>
-                                    Read more
-                                </a> */}
-                            </div>
-                        </div>
-                        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <Image
-                                src={toilet_cleaning}
-                                alt="service"
-                                className="w-full h-48 object-cover"
-                            />
-                            <div className="p-6">
-                                <div className="flex items-center mb-4">
-                                    <i className="fas fa-toilet text-blue-600 text-2xl mr-2"></i>
-                                    <h3 className="text-xl font-bold text-blue-900">
-                                        Toilet Cleaning
-                                    </h3>
-                                </div>
-                                <p className="text-gray-600 mb-4">
-                                    As a app web crawler expert a significance
-                                    of internet.
-                                </p>
-                                {/* <a
-                                    className="text-blue-600 font-semibold flex items-center"
-                                    href="#">
-                                    <i className="fas fa-arrow-circle-right mr-2"></i>
-                                    Read more
-                                </a> */}
-                            </div>
-                        </div>
+                        <Services />
+                        <Services />
+                        <Services />
+                        <Services />
+                        <Services />
+                        <Services />
+                        <Services />
+                        <Services />
+                        <Services />
                     </div>
                 </div>
             </section>

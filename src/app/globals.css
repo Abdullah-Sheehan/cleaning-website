@@ -1,2 +1,19 @@
 @import "tailwindcss";
 
+.imagelogo {
+    width: 200px;
+    height: 100px;
+}
+
+.fixedmenu {
+    border-radius: 20px 0px 0px 20px;
+}
+
+.wapbtn:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.bestcleaning {
+    line-height: 0.95;
+}

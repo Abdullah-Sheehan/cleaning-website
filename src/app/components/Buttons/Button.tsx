@@ -2,13 +2,14 @@ import React from "react";
 
 interface ButtonProps {
     buttonText: string;
+    link: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ buttonText }) => {
+const Button: React.FC<ButtonProps> = ({ buttonText, link }) => {
     return (
         <div>
-            <a href="#">
-                <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded flex items-center">
+            <a href={link}>
+                <button className="cursor-pointer bg-blue-500 text-white font-bold py-5 px-5 rounded flex items-center">
                     {buttonText}
                     <i className="fas fa-arrow-right ml-2"></i>
                 </button>
