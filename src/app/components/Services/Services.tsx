@@ -1,6 +1,6 @@
 import React from "react";
 
-import toilet_cleaning from "@/../public/images/toilet_cleaning.jpg";
+import toilet_cleaning from "/images/toilet_cleaning.jpg";
 import Image from "next/image";
 
 const Services = () => {
