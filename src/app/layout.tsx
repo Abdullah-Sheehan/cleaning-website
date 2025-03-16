@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import Button from "./components/Buttons/Button";
-import logo from "@/../public/images/logo.png";
+import logo from "/images/logo.png";
 // import kitchen from "@/../public/images/kitchen.jpg";
 // import floor_cleaning from "@/../public/images/floor_cleaning.jpg";
 // import toilet_cleaning from "@/../public/images/toilet_cleaning.jpg";
@@ -107,7 +107,7 @@ export default function RootLayout({
                             Elements
                         </a>
                     </div> */}
-                    <div className="ms-auto me-10" >
+                    <div className="ms-auto me-10">
                         <Button buttonText="Call us now!" link="#" />
                     </div>
                 </nav>
